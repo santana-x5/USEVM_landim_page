@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USEVM Pratas | Elegância em Prata 925</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#c4aead',
+                        brandLight: '#d6c4c3',
+                        dark: '#333333',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Classes para o JS do Scroll Reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Ocultar scrollbar no Lightbox para ficar mais clean */
+        body.modal-open { overflow: hidden; }
+    </style>
+</head>
+<body class="bg-gray-50 text-dark font-sans antialiased">
+
+    <header class="fixed w-full top-0 bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-serif text-brand font-bold tracking-widest">
+                        USEVM
+                    </a>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#colecoes" class="text-gray-600 hover:text-brand transition duration-300">Coleções</a>
+                    <a href="#qualidade" class="text-gray-600 hover:text-brand transition duration-300">Qualidade 925</a>
+                    <a href="#depoimentos" class="text-gray-600 hover:text-brand transition duration-300">Depoimentos</a>
+                </nav>
+
+                <div class="hidden md:flex">
+                    <a href="#" class="bg-brand hover:bg-brandLight text-white px-6 py-2 rounded-full font-medium transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de ver o catálogo completo da USEVM.">
+                        Catálogo WhatsApp
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-brand focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <a href="#colecoes" class="block px-3 py-2 text-gray-600 hover:text-brand mobile-link">Coleções</a>
+                <a href="#qualidade" class="block px-3 py-2 text-gray-600 hover:text-brand mobile-link">Qualidade 925</a>
+                <a href="#depoimentos" class="block px-3 py-2 text-gray-600 hover:text-brand mobile-link">Depoimentos</a>
+                <a href="#" class="block mt-4 bg-brand text-white px-6 py-2 rounded-full font-medium w-max mx-auto whatsapp-link" data-msg="Olá! Gostaria de ver o catálogo completo da USEVM.">Catálogo WhatsApp</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="mt-20 bg-brand text-white py-20 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row items-center">
+            <div class="w-full md:w-1/2 text-center md:text-left mt-10 md:mt-0 reveal">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif leading-tight mb-6">
+                    Sua elegância eternizada em Prata 925.
+                </h1>
+                <p class="text-lg md:text-xl mb-8 opacity-90">
+                    Joias minimalistas e atemporais para quem valoriza qualidade e estilo em cada detalhe.
+                </p>
+                <a href="#colecoes" class="inline-block bg-white text-brand px-8 py-3 rounded-full font-semibold text-lg hover:bg-gray-100 transition duration-300 shadow-lg">
+                    Ver Coleção Completa
+                </a>
+            </div>
+            <div class="w-full md:w-1/2 flex justify-center reveal">
+                <div class="w-64 h-64 md:w-96 md:h-96 bg-brandLight rounded-full flex items-center justify-center overflow-hidden shadow-2xl">
+                    <span class="text-dark/50 text-sm p-4 text-center">
+                        [Insira uma foto em alta resolução de um colar ou brinco aqui (fundo transparente ou claro)]
+                    </span>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="qualidade" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
+            <h2 class="text-3xl font-serif text-brand mb-12">Por que escolher a USEVM?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <div class="text-brand text-4xl mb-4">💎</div>
+                    <h3 class="text-xl font-semibold mb-2">Prata 925 Legítima</h3>
+                    <p class="text-gray-600">Qualidade garantida com certificado de autenticidade.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <div class="text-brand text-4xl mb-4">✨</div>
+                    <h3 class="text-xl font-semibold mb-2">Durabilidade Eterna</h3>
+                    <p class="text-gray-600">Um investimento que dura a vida toda com os cuidados certos.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <div class="text-brand text-4xl mb-4">🎀</div>
+                    <h3 class="text-xl font-semibold mb-2">Design Exclusivo</h3>
+                    <p class="text-gray-600">Peças selecionadas para combinar com qualquer ocasião.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="colecoes" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal">
+                <h2 class="text-3xl font-serif text-brand mb-4">Nossas Coleções</h2>
+                
+                <div class="flex justify-center space-x-4 mt-8" id="filter-buttons">
+                    <button class="filter-btn active bg-brand text-white px-4 py-1 rounded-full border border-brand" data-filter="all">Tudo</button>
+                    <button class="filter-btn text-brand px-4 py-1 rounded-full border border-brand hover:bg-brand hover:text-white transition" data-filter="brincos">Brincos</button>
+                    <button class="filter-btn text-brand px-4 py-1 rounded-full border border-brand hover:bg-brand hover:text-white transition" data-filter="colares">Colares</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8" id="product-grid">
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
+                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            [Foto do Brinco - Clique para Expandir]
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Brinco Ponto de Luz</h3>
+                    <p class="text-brand font-medium mb-4">R$ 49,90</p>
+                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de comprar o Brinco Ponto de Luz (R$ 49,90).">
+                        Quero este
+                    </button>
+                </div>
+
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="colares">
+                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            [Foto do Colar - Clique para Expandir]
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Colar Trevo (Inspiração)</h3>
+                    <p class="text-brand font-medium mb-4">R$ 119,90</p>
+                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de comprar o Colar Trevo (R$ 119,90).">
+                        Quero este
+                    </button>
+                </div>
+
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
+                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            [Foto da Argola - Clique para Expandir]
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
+                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
+                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de comprar a Argola Cravejada Zircônia (R$ 89,90).">
+                        Quero este
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="py-20 bg-brandLight/30">
+        <div class="max-w-3xl mx-auto px-4 text-center reveal">
+            <h2 class="text-3xl font-serif text-brand mb-10">O que nossas clientes dizem</h2>
+            <div class="bg-white p-8 rounded-2xl shadow-sm relative">
+                <span class="text-5xl text-brandLight absolute top-4 left-6">"</span>
+                <p class="text-gray-700 italic text-lg relative z-10 pt-4">
+                    As peças da USEVM são impecáveis. O brilho da prata 925 é outro nível e o atendimento foi excelente! Com certeza voltarei a comprar.
+                </p>
+                <div class="mt-6 font-semibold text-dark">— Mariana S.</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 text-center reveal">
+            <h2 class="text-3xl font-serif mb-6">Encontrou sua próxima joia favorita?</h2>
+            <button class="bg-brand hover:bg-white hover:text-brand text-white px-8 py-4 rounded-full text-lg font-semibold transition duration-300 mb-16 shadow-lg whatsapp-link" data-msg="Olá! Gostaria de falar com um consultor.">
+                Falar com um Consultor agora
+            </button>
+            
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                <p>&copy; 2026 USEVM Pratas. Todos os direitos reservados.</p>
+                <div class="mt-4 md:mt-0 flex space-x-4">
+                    <a href="https://instagram.com/vm.pratas_925" target="_blank" class="hover:text-brand transition">Instagram: @vm.pratas_925</a>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="fixed inset-0 bg-black/90 z-[60] hidden items-center justify-center opacity-0 transition-opacity duration-300">
+        <button id="close-lightbox" class="absolute top-6 right-6 text-white text-4xl hover:text-brand transition">&times;</button>
+        <div class="max-w-3xl w-full p-4 flex items-center justify-center h-full">
+            <div id="lightbox-content" class="bg-white w-full aspect-square md:aspect-video flex items-center justify-center text-dark text-xl rounded-lg">
+                [A Imagem em Alta Resolução abrirá aqui]
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
