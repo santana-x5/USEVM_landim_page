@@ -61,9 +61,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const lightbox = document.getElementById('lightbox');
     const closeLightbox = document.getElementById('close-lightbox');
     const triggers = document.querySelectorAll('.lightbox-trigger');
+    const lightboxImg = lightbox.querySelector('img');
 
     triggers.forEach(trigger => {
         trigger.addEventListener('click', () => {
+
+            const imgSrc = trigger.querySelector('img').src;
+
+            if (lightboxImg){
+                lightboxImg.src = imgSrc;
+            }
             lightbox.classList.remove('hidden');
             lightbox.classList.add('flex');
             setTimeout(() => lightbox.classList.remove('opacity-0'), 10);

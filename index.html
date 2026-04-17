@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>USEVM Pratas | Elegância em Prata 925</title>
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <script>
         tailwind.config = {
             theme: {
@@ -28,15 +29,19 @@
             transform: translateY(30px);
             transition: all 0.8s ease-out;
         }
+
         .reveal.active {
             opacity: 1;
             transform: translateY(0);
         }
-        
+
         /* Ocultar scrollbar no Lightbox para ficar mais clean */
-        body.modal-open { overflow: hidden; }
+        body.modal-open {
+            overflow: hidden;
+        }
     </style>
 </head>
+
 <body class="bg-gray-50 text-dark font-sans antialiased">
 
     <header class="fixed w-full top-0 bg-white/90 backdrop-blur-md shadow-sm z-50">
@@ -47,15 +52,19 @@
                         USEVM
                     </a>
                 </div>
-                
+
                 <nav class="hidden md:flex space-x-8">
                     <a href="#colecoes" class="text-gray-600 hover:text-brand transition duration-300">Coleções</a>
-                    <a href="#qualidade" class="text-gray-600 hover:text-brand transition duration-300">Qualidade 925</a>
-                    <a href="#depoimentos" class="text-gray-600 hover:text-brand transition duration-300">Depoimentos</a>
+                    <a href="#qualidade" class="text-gray-600 hover:text-brand transition duration-300">Qualidade
+                        925</a>
+                    <a href="#depoimentos"
+                        class="text-gray-600 hover:text-brand transition duration-300">Depoimentos</a>
                 </nav>
 
                 <div class="hidden md:flex">
-                    <a href="#" class="bg-brand hover:bg-brandLight text-white px-6 py-2 rounded-full font-medium transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de ver o catálogo completo da USEVM.">
+                    <a href="#"
+                        class="bg-brand hover:bg-brandLight text-white px-6 py-2 rounded-full font-medium transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de ver o catálogo completo da USEVM.">
                         Catálogo WhatsApp
                     </a>
                 </div>
@@ -63,7 +72,8 @@
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-button" class="text-gray-600 hover:text-brand focus:outline-none">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
                 </div>
@@ -73,9 +83,13 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
                 <a href="#colecoes" class="block px-3 py-2 text-gray-600 hover:text-brand mobile-link">Coleções</a>
-                <a href="#qualidade" class="block px-3 py-2 text-gray-600 hover:text-brand mobile-link">Qualidade 925</a>
-                <a href="#depoimentos" class="block px-3 py-2 text-gray-600 hover:text-brand mobile-link">Depoimentos</a>
-                <a href="#" class="block mt-4 bg-brand text-white px-6 py-2 rounded-full font-medium w-max mx-auto whatsapp-link" data-msg="Olá! Gostaria de ver o catálogo completo da USEVM.">Catálogo WhatsApp</a>
+                <a href="#qualidade" class="block px-3 py-2 text-gray-600 hover:text-brand mobile-link">Qualidade
+                    925</a>
+                <a href="#depoimentos"
+                    class="block px-3 py-2 text-gray-600 hover:text-brand mobile-link">Depoimentos</a>
+                <a href="#"
+                    class="block mt-4 bg-brand text-white px-6 py-2 rounded-full font-medium w-max mx-auto whatsapp-link"
+                    data-msg="Olá! Gostaria de ver o catálogo completo da USEVM.">Catálogo WhatsApp</a>
             </div>
         </div>
     </header>
@@ -89,16 +103,18 @@
                 <p class="text-lg md:text-xl mb-8 opacity-90">
                     Joias minimalistas e atemporais para quem valoriza qualidade e estilo em cada detalhe.
                 </p>
-                <a href="#colecoes" class="inline-block bg-white text-brand px-8 py-3 rounded-full font-semibold text-lg hover:bg-gray-100 transition duration-300 shadow-lg">
+                <a href="#colecoes"
+                    class="inline-block bg-white text-brand px-8 py-3 rounded-full font-semibold text-lg hover:bg-gray-100 transition duration-300 shadow-lg">
                     Ver Coleção Completa
                 </a>
             </div>
             <div class="w-full md:w-1/2 flex justify-center reveal">
-                <div class="w-64 h-64 md:w-96 md:h-96 bg-brandLight rounded-full flex items-center justify-center overflow-hidden shadow-2xl">
+                <div
+                    class="w-64 h-64 md:w-96 md:h-96 bg-brandLight rounded-full flex items-center justify-center overflow-hidden shadow-2xl">
                     <span class="text-dark/50 text-sm p-4 text-center">
                         <img src="assets/images/logo_useVM.jpeg" alt="">
                     </span>
-                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -130,833 +146,922 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12 reveal">
                 <h2 class="text-3xl font-serif text-brand mb-4">Nossas Coleções</h2>
-                
+
                 <div class="flex justify-center space-x-4 mt-8" id="filter-buttons">
-                    <button class="filter-btn active bg-brand text-white px-4 py-1 rounded-full border border-brand" data-filter="all">Tudo</button>
-                    <button class="filter-btn text-brand px-4 py-1 rounded-full border border-brand hover:bg-brand hover:text-white transition" data-filter="Masculino">Masculino</button>
-                    <button class="filter-btn text-brand px-4 py-1 rounded-full border border-brand hover:bg-brand hover:text-white transition" data-filter="Feminino">Feminino</button>
+                    <button class="filter-btn active bg-brand text-white px-4 py-1 rounded-full border border-brand"
+                        data-filter="all">Tudo</button>
+                    <button
+                        class="filter-btn text-brand px-4 py-1 rounded-full border border-brand hover:bg-brand hover:text-white transition"
+                        data-filter="Masculino">Masculino</button>
+                    <button
+                        class="filter-btn text-brand px-4 py-1 rounded-full border border-brand hover:bg-brand hover:text-white transition"
+                        data-filter="Feminino">Feminino</button>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8" id="product-grid">
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="Feminino">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            <img src="assets/images/col_elo_heart_50.png" alt="colar elo de coração">
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/3bri_fem_20.png" alt="trio de brinco feminino">
                         </div>
                     </div>
-                    <h3 class="text-lg font-semibold text-dark">Colar Elo Coração/h3>
+                    <h3 class="text-lg font-semibold text-dark">trio de brinco feminino</h3>
+                    <p class="text-brand font-medium mb-4">R$ 20,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Masculino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/bri_10m_33.png" alt="Brinco 10mm">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Brinco 10mm</h3>
+                    <p class="text-brand font-medium mb-4">R$ 33,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Masculino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/bri_12m_37.png" alt="Brinco 12mm">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Brinco 12mm</h3>
+                    <p class="text-brand font-medium mb-4">R$ 37,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+
+
+
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Masculino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/bri_4m_15.png" alt="Brinco 4mm">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Brinco 4mm</h3>
+                    <p class="text-brand font-medium mb-4">R$ 15,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Masculino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/bri_5m_18.png" alt="Brinco 5mm">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Brinco 5mm</h3>
+                    <p class="text-brand font-medium mb-4">R$ 18,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Masculino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/bri_6m_21.png" alt="Brinco 6mm">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Brinco 6mm</h3>
+                    <p class="text-brand font-medium mb-4">R$ 21,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Masculino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/bri_7m_24.png" alt="Brinco 7mm">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Brinco 7mm</h3>
+                    <p class="text-brand font-medium mb-4">R$ 24,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Masculino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/bri_9m_30.png" alt="Brinco 9mm">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Brinco 9mm</h3>
+                    <p class="text-brand font-medium mb-4">R$ 30,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/bri_bb_arcIris_35.png" alt="Brinco baby arco-íris">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Brinco baby arco-íris</h3>
+                    <p class="text-brand font-medium mb-4">R$ 35,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/bri_bb_cry_ylw_30.png" alt="Brinco baby cristal amarelo">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Brinco baby cristal amarelo</h3>
+                    <p class="text-brand font-medium mb-4">R$ 30,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/bri_bb_pinkG_30.png" alt="Brinco baby rosa G">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Brinco baby rosa G</h3>
+                    <p class="text-brand font-medium mb-4">R$ 30,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/bri_bb_pinkM_30.png" alt="Brinco baby rosa M">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Brinco baby rosa M</h3>
+                    <p class="text-brand font-medium mb-4">R$ 30,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/bri_nss_snr_crav_40.png" alt="brinco Nossa Senhora cravekad">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">brinco Nossa Senhora cravejado</h3>
+                    <p class="text-brand font-medium mb-4">R$ 40,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Masculino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/bri_raio_75.jpeg" alt="Brinco Raio">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Brinco Raio</h3>
+                    <p class="text-brand font-medium mb-4">R$ 75,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/anel_heart_vaz_crav_30.png" alt="Anel coração vazado cravejado">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Anel coração vazado cravejado</h3>
+                    <p class="text-brand font-medium mb-4">R$ 30,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/anel_mul_mara_25.png" alt="Anel mulher maravilha">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Anel mulher maravilha</h3>
+                    <p class="text-brand font-medium mb-4">R$ 25,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/arg_crav_M_60.png" alt="Argola cravejada M">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Argola cravejada M</h3>
+                    <p class="text-brand font-medium mb-4">R$ 60,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/arg_crav_p_55.png" alt="Argola cravejada P">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Argola cravejada P</h3>
+                    <p class="text-brand font-medium mb-4">R$ 55,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Masculino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/arg_cra_p_70.png" alt="Argola cravejada P">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Argola cravejada P</h3>
+                    <p class="text-brand font-medium mb-4">R$ 70,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Masculino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/arg_crav_pp_50.png" alt="Argola cravejada PP">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Argola cravejada PP</h3>
                     <p class="text-brand font-medium mb-4">R$ 50,00</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
                         Quero este
                     </button>
                 </div>
-
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="Feminino">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            <img src="assets/images/pul_elo_heart_40.png" alt="pulseira elo coração">
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Masculino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/argola_njr_100.jpeg" alt="Argola inspiração NJR">
                         </div>
                     </div>
-                    <h3 class="text-lg font-semibold text-dark">Pulseira Elo Coração</h3>
-                    <p class="text-brand font-medium mb-4">R$ 119,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
+                    <h3 class="text-lg font-semibold text-dark">Argola inspiração NJR</h3>
+                    <p class="text-brand font-medium mb-4">R$ 100,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
                         Quero este
                     </button>
                 </div>
-
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="Masculino">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/berl_cac_crist_35.png" alt="Berloque cacto cristal">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Berloque cacto cristal</h3>
+                    <p class="text-brand font-medium mb-4">R$ 35,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/berl_cac_ver_35.png" alt="Berloque cacto verde">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Berloque cacto verde</h3>
+                    <p class="text-brand font-medium mb-4">R$ 35,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/berl_cha_crav_40.png" alt="Berloque chave cravejado">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Berloque chave cravejado</h3>
+                    <p class="text-brand font-medium mb-4">R$ 40,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/berl_cha_gonz_55.png" alt="Berloque Chapéu gonzaga">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Berloque Chapéu gonzaga</h3>
+                    <p class="text-brand font-medium mb-4">R$ 55,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/berl_nss_snr_impo_80.png" alt="Berloque Nossa Senhora importado">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Berloque Nossa Senhora importado</h3>
+                    <p class="text-brand font-medium mb-4">R$ 80,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/berl_satinha_crav_40.png" alt="Berloque Santinha Cravejado">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Berloque Santinha Cravejado</h3>
+                    <p class="text-brand font-medium mb-4">R$ 40,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/berl_sepa_pic_mora_55.png"
+                                alt="Berloque separador picolé de morango">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Berloque separador picolé de morango</h3>
+                    <p class="text-brand font-medium mb-4">R$ 55,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/cai_col_12.png" alt="Caixa para colar">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Caixa para colar</h3>
+                    <p class="text-brand font-medium mb-4">R$ 12,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/col_elo_heart_50.png" alt="Colar elo coração">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Colar elo coração</h3>
+                    <p class="text-brand font-medium mb-4">R$ 50,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/col_esp_snt_50.png" alt="Colar Espiríto Santo">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Colar Espiríto Santo</h3>
+                    <p class="text-brand font-medium mb-4">R$ 50,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/col_gota_45.png" alt="Colar gota">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Colar gota</h3>
+                    <p class="text-brand font-medium mb-4">R$ 45,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/col_gravinha_55.png" alt="Colar Gravatinha">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Colar Gravatinha</h3>
+                    <p class="text-brand font-medium mb-4">R$ 55,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Masculino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/cor_1m_70c_80.png" alt="Corrente 1mm 70cm">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Corrente 1mm 70cm</h3>
+                    <p class="text-brand font-medium mb-4">R$ 80,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Masculino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/cor_2m_70c_120.png" alt="Corrente 2mm 70cm">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Corrente 2mm 70cm</h3>
+                    <p class="text-brand font-medium mb-4">R$ 120,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminina">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/cor_ven_30.png" alt="Corrente Veneziana">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Corrente Veneziana/h3>
+                        <p class="text-brand font-medium mb-4">R$ 30,00</p>
+                        <button
+                            class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                            data-msg="Olá! Gostaria de adquirir uma peça.">
+                            Quero este
+                        </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Masculino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/esc_70cm_100.png" alt="Escapulário 70cm">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Escapulário 70cm</h3>
+                    <p class="text-brand font-medium mb-4">R$ 100,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/kit_boli_col_bri_60.png" alt="Conjunto bolinha Colar + brinco">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Conjunto bolinha Colar + brinco</h3>
+                    <p class="text-brand font-medium mb-4">R$ 60,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/kit_col_bri_60.png" alt="Conjunto Coração Colar + brinco">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Conjunto Coração Colar + brinco</h3>
+                    <p class="text-brand font-medium mb-4">R$ 60,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/pie_pnt_luz_27.png" alt="Piercing ponto de luz">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Piercing ponto de luz</h3>
+                    <p class="text-brand font-medium mb-4">R$ 27,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/pie_trag_30.png" alt="Piercing Trágus">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Piercing Trágus</h3>
+                    <p class="text-brand font-medium mb-4">R$ 30,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/pie_tragus_30.png" alt="Piercing Trágus">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Piercing Trágus</h3>
+                    <p class="text-brand font-medium mb-4">R$ 30,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Masculino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/pin_cruz_30.png" alt="Pingente Cruz">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Pingente Cruz</h3>
+                    <p class="text-brand font-medium mb-4">R$ 30,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Masculino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
                             <img src="assets/images/pul_3m_dou_85.png" alt="Pulseira 3mm elo duplo">
                         </div>
                     </div>
-                    <h3 class="text-lg font-semibold text-dark">Pulseira 3mm Elo Duplo</h3>
+                    <h3 class="text-lg font-semibold text-dark">Pulseira 3mm elo duplo</h3>
                     <p class="text-brand font-medium mb-4">R$ 85,00</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
                         Quero este
                     </button>
                 </div>
-
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/pul_baby_50.png" alt="Pulseira baby">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Pulseira baby</h3>
+                    <p class="text-brand font-medium mb-4">R$ 50,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/pul_elo_heart_40.png" alt="Pulseira Elo coração">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Pulseira Elo coração</h3>
+                    <p class="text-brand font-medium mb-4">R$ 40,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/pul_hearts_50.png" alt="Pulseira coração">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Pulseira coração</h3>
+                    <p class="text-brand font-medium mb-4">R$ 50,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/pul_inf_crav_45.png" alt="Pulseira infinito cravejad">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Pulseira infinito cravejada</h3>
+                    <p class="text-brand font-medium mb-4">R$ 45,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/pul_pan_heart_cra_200.png" alt="Pulseira Pandora Coração Cravejado">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Pulseira Pandora Coração Cravejado</h3>
+                    <p class="text-brand font-medium mb-4">R$200,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/pul_trev_50.png" alt="Pulseira Trevo">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Pulseira Trevo</h3>
+                    <p class="text-brand font-medium mb-4">R$ 50,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/torno_boli_50.png" alt="Tornozeleira Bolinha">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Tornozeleira Bolinha</h3>
+                    <p class="text-brand font-medium mb-4">R$ 50,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
+                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal"
+                    data-category="Feminino">
+                    <div
+                        class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
+                        <div
+                            class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
+                            <img src="assets/images/torno_est_choker_75.png" alt="Tornozeleira Estilo Chocker">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-dark">Tornozeleira Estilo Chocker</h3>
+                    <p class="text-brand font-medium mb-4">R$ 75,00</p>
+                    <button
+                        class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link"
+                        data-msg="Olá! Gostaria de adquirir uma peça.">
+                        Quero este
+                    </button>
+                </div>
                 
 
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>
-
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 89,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>                
-                <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal" data-category="brincos">
-                    <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
-                        <div class="w-full h-full flex items-center justify-center text-gray-400 text-sm text-center p-4">
-                            [Foto da Argola - Clique para Expandir]
-                        </div>
-                    </div>
-                    <h3 class="text-lg font-semibold text-dark">Argola Cravejada Zircônia</h3>
-                    <p class="text-brand font-medium mb-4">R$ 99,90</p>
-                    <button class="w-full bg-white border border-brand text-brand hover:bg-brand hover:text-white py-2 rounded-lg transition duration-300 whatsapp-link" data-msg="Olá! Gostaria de adquirir uma peça.">
-                        Quero este
-                    </button>
-                </div>
-               
-                </div> <div class="text-center mt-12">
-        <button id="btn-ver-mais" class="hidden bg-transparent border-2 border-brand text-brand hover:bg-brand hover:text-white px-8 py-3 rounded-full font-semibold transition duration-300">
-            Ver todos os produtos
-        </button>
-        
-    </div>
             </div>
+            <div class="text-center mt-12">
+                <button id="btn-ver-mais"
+                    class="hidden bg-transparent border-2 border-brand text-brand hover:bg-brand hover:text-white px-8 py-3 rounded-full font-semibold transition duration-300">
+                    Ver todos os produtos
+                </button>
+
+            </div>
+        </div>
         </div>
     </section>
 
@@ -966,7 +1071,8 @@
             <div class="bg-white p-8 rounded-2xl shadow-sm relative">
                 <span class="text-5xl text-brandLight absolute top-4 left-6">"</span>
                 <p class="text-gray-700 italic text-lg relative z-10 pt-4">
-                    As peças da USEVM são impecáveis. O brilho da prata 925 é outro nível e o atendimento foi excelente! Com certeza voltarei a comprar.
+                    As peças da USEVM são impecáveis. O brilho da prata 925 é outro nível e o atendimento foi excelente!
+                    Com certeza voltarei a comprar.
                 </p>
                 <div class="mt-6 font-semibold text-dark">— Mariana S.</div>
             </div>
@@ -976,28 +1082,35 @@
     <footer class="bg-dark text-white pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-4 text-center reveal">
             <h2 class="text-3xl font-serif mb-6">Encontrou sua próxima joia favorita?</h2>
-            <button class="bg-brand hover:bg-white hover:text-brand text-white px-8 py-4 rounded-full text-lg font-semibold transition duration-300 mb-16 shadow-lg whatsapp-link" data-msg="Olá! Gostaria de falar com um consultor.">
+            <button
+                class="bg-brand hover:bg-white hover:text-brand text-white px-8 py-4 rounded-full text-lg font-semibold transition duration-300 mb-16 shadow-lg whatsapp-link"
+                data-msg="Olá! Gostaria de falar com um consultor.">
                 Falar com um Consultor agora
             </button>
-            
-            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+
+            <div
+                class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
                 <p>&copy; 2026 USEVM Pratas. Todos os direitos reservados.</p>
                 <div class="mt-4 md:mt-0 flex space-x-4">
-                    <a href="https://instagram.com/vm.pratas_925" target="_blank" class="hover:text-brand transition">Instagram: @vm.pratas_925</a>
-                    </div>
+                    <a href="https://instagram.com/vm.pratas_925" target="_blank"
+                        class="hover:text-brand transition">Instagram: @vm.pratas_925</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <div id="lightbox" class="fixed inset-0 bg-black/90 z-[60] hidden items-center justify-center opacity-0 transition-opacity duration-300">
-        <button id="close-lightbox" class="absolute top-6 right-6 text-white text-4xl hover:text-brand transition">&times;</button>
+    <div id="lightbox"
+        class="fixed inset-0 bg-black/90 z-[60] hidden items-center justify-center opacity-0 transition-opacity duration-300">
+        <button id="close-lightbox"
+            class="absolute top-6 right-6 text-white text-4xl hover:text-brand transition">&times;</button>
+
         <div class="max-w-3xl w-full p-4 flex items-center justify-center h-full">
-            <div id="lightbox-content" class="bg-white w-full aspect-square md:aspect-video flex items-center justify-center text-dark text-xl rounded-lg">
-                [A Imagem em Alta Resolução abrirá aqui]
-            </div>
+            <img src="" alt="Zoom do Produto"
+                class="js-lightbox-img max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl">
         </div>
     </div>
 
     <script src="main.js"></script>
 </body>
+
 </html>
