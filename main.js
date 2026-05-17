@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         return `
           <div class="product-card bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition duration-300 reveal ${classesEsgotado}"
-               data-category="${produto.categoria}"
+               data-category="${produto.categoria?.toLowerCase()}"
                style="opacity:0; transform:scale(0.9); transition: opacity 0.3s ease, transform 0.3s ease;">
             <div class="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden cursor-pointer lightbox-trigger">
               <div class="w-full h-full flex items-center justify-center">
