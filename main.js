@@ -301,14 +301,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     carregarProdutos();
 
-    // ==========================================
-    // 8. REGISTRO DO SERVICE WORKER (PWA)
-    // ==========================================
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/sw.js')
-                .then(reg => console.log('[PWA] SW registrado:', reg.scope))
-                .catch(err => console.error('[PWA] Falha no SW:', err));
-        });
-    }
-});
+})
